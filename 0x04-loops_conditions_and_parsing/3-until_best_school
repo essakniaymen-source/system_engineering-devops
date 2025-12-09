@@ -1,7 +1,8 @@
-#!/bin/bash
-i=1
-until [ $i -gt 10 ]
+#!/usr/bin/env bash
+# print Best School 10 times using until
+count=1
+until [ "$count" -gt 10 ]
 do
     echo "Best School"
-    i=$((i+1))
+    count=$((count + 1))
 done
