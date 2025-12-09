@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# list files, cut everything before the first dash
+for f in *-*
+do
+    [ -e "$f" ] || continue
+    echo "${f#*-}"
+done
