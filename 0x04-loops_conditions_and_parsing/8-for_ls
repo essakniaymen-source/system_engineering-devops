@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
-# list files, cut everything before the first dash
-for f in *-*
-do
+# list all files, printing names after the first dash when present
+
+for f in *; do
     [ -e "$f" ] || continue
-    echo "${f#*-}"
+
+    if [[ "$f" == *-* ]]; then
+        echo "${f#*-}"
+    else
+        echo "$f"
+    fi
 done
