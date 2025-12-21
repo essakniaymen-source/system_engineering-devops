@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Lists all running processes in a user-oriented hierarchical format
+
+ps auxf
